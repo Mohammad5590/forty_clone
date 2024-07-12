@@ -1,0 +1,38 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    transition: .3s;
+}
+.logo:hover{
+    color: aquamarine;
+    transition: .3s;
+}
+.logo>strong{
+    background-color: white;
+    transition: .3s;
+}
+.logo>strong:hover{
+    background-color: aqua;
+    color: black;
+    transition: .3s;
+}
+
+.menuDiv{
+display: flex;
+/* background-color: aquamarine; */
+justify-content: center;
+align-items: center;
+gap: 10px;
+transition: .3s;
+}
+.menuDiv:hover{
+    color: aquamarine;
+    transition: .3s;
+}
