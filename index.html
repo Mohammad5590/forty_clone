@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-<section id="navBar">
-    
-</section>
+
+    <div class="imgDiv">
+        <img src="https://html5up.net/uploads/demos/forty/images/banner.jpg" alt="">
+    </div>
+    <section id="major">
+        <div id="navBar">
+        </div>
+        <div class="inner">
+            <h1 class="heading">Hi, my name is Forty</h1>
+            <hr>
+            <div class="content">
+                <p>A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
+                    AND RELEASED UNDER THE CREATIVE COMMONS.</p>
+                <button class="button"><span>Get Sttarted</span> <span style="font-size: 30px;">&#x27F6</span></button>
+            </div>
+        </div>
+    </section>
+        <section class="tiles">
+            <div class="backgroundImgMainDiv">
+                <img src="https://html5up.net/uploads/demos/forty/images/pic01.jpg" alt="">
+            </div>
+            <div>
+                <div>
+
+                </div>
+                <img src="https://html5up.net/uploads/demos/forty/images/pic03.jpg" alt="">
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
 </body>
 
 <script>
-document.addEventListener("DOMContentLoaded",function(){
-    fetch("navBar.html")
-    .then(res=>res.text())
-    .then(data =>{
-        document.getElementById("navBar").innerHTML=data
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("navBar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navBar").innerHTML = data
+            })
+            .catch(error => console.error('Error loading navbar', error))
     })
-    .catch(error =>console.error('Error loading navbar',error))
-})
 </script>
+
 </html>
