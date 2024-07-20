@@ -32,22 +32,68 @@
                 <button class="button"><span>Get Sttarted</span> <span style="font-size: 30px;">&#x27F6</span></button>
             </div>
         </div>
+    </section><section class="titles">
+        <div class="backgroundImgMainDiv1">
+            <img src="https://html5up.net/uploads/demos/forty/images/pic01.jpg" alt="">
+            <div></div>
+            <div class="content2">
+                <h3 class="h3">Aliquam</h3>
+                <hr class="hr">
+                <p>IPSUM DOLOR SIT AMET</p>
+            </div>
+        </div>
+        <div class="backgroundImgMainDiv2">
+            <img src="https://html5up.net/uploads/demos/forty/images/pic02.jpg" alt="">
+            <div class="content2">
+                <h3 class="h3">Tempus</h3>
+                <hr class="hr">
+                <p>FEUGIAT AMET TEMPUS</p>
+            </div>
+        </div>
+        <div class="backgroundImgMainDiv3">
+            <img src="https://html5up.net/uploads/demos/forty/images/pic03.jpg" alt="">
+            <div class="content2">
+                <h3 class="h3">Tempus</h3>
+                <hr class="hr">
+                <p>FEUGIAT AMET TEMPUS</p>
+            </div>
+        </div>
+        <div class="backgroundImgMainDiv4">
+            <img src="https://html5up.net/uploads/demos/forty/images/pic04.jpg" alt="">
+            <div class="content2">
+                <h3 class="h3">ipsum</h3>
+                <hr class="hr">
+                <p>NISL SED AlIQUAM</p>
+            </div>
+        </div>
+        
+        <div class="backgroundImgMainDiv5">
+            <img src="https://html5up.net/uploads/demos/forty/images/pic05.jpg" alt="">
+            <div class="content2">
+                <h3 class="h3">ipsum</h3>
+                <hr class="hr">
+                <p>NISL SED AlIQUAM</p>
+            </div>
+        </div>
+        
+        <div class="backgroundImgMainDiv6">
+            <img src="https://html5up.net/uploads/demos/forty/images/pic06.jpg" alt="">
+            <div class="content2">
+                <h3 class="h3">ipsum</h3>
+                <hr class="hr">
+                <p>NISL SED AlIQUAM</p>
+            </div>
+        </div>
     </section>
-        <section class="tiles">
-            <div class="backgroundImgMainDiv">
-                <img src="https://html5up.net/uploads/demos/forty/images/pic01.jpg" alt="">
-            </div>
-            <div>
-                <div>
-
-                </div>
-                <img src="https://html5up.net/uploads/demos/forty/images/pic03.jpg" alt="">
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
+    <section class="footerUpperSection">
+        <div  class="innerDiv">
+            <h2 class="h2">Massa libero</h2>
+            <hr class="hr2">
+            <p style="color: rgb(221,216,226);">Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+            <button class="button2"><span>Get Sttarted</span> <span style="font-size: 30px;">&#x27F6</span></button>
+        </div>
+    </section>
+    <div id="footer"></div>
 </body>
 
 <script>
@@ -58,6 +104,14 @@
                 document.getElementById("navBar").innerHTML = data
             })
             .catch(error => console.error('Error loading navbar', error))
+    })
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data
+            })
+            .catch(error => console.error('Error loading footer', error))
     })
 </script>
 

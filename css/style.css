@@ -2,6 +2,7 @@ body {
     padding: 0%;
     margin: 0%;
     font-family: "Poppins", sans-serif;
+    background-color:  rgb(42,47,74);
 }
 
 #major {
@@ -83,11 +84,157 @@ body {
     width: 100%;
     height: 80vh;
     margin: auto;
-}
-.titels{
+}.titles {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
 }
-.backgroundImgMainDiv>img{
-    width: 30%;
+
+.backgroundImgMainDiv1 {
+    position: relative;
+    width: 40%; /* Adjust width as needed */
+    background-color:  rgb(122,192,216);
+    height: 400px;
+}
+.h3{
+    font-size: 30px;
+    margin: 0%;
+}
+.backgroundImgMainDiv2 {
+    position: relative;
+    width: 60%;
+    background-color:  rgb(126,118,180);
+    height: 400px;
+}
+.backgroundImgMainDiv3{
+    position: relative;
+    width: 60%;
+    background-color: rgb(229,147,138);
+    height: 400px;
+}
+
+.backgroundImgMainDiv4{
+    position: relative;
+    width: 40%;
+    background-color: rgb(219,178,139);
+    height: 400px;
+}
+
+.backgroundImgMainDiv5{
+    position: relative;
+    width: 40%;
+    background-color: rgb(141,167,224);
+    height: 400px;
+}
+
+.backgroundImgMainDiv6{
+    position: relative;
+    width: 60%;
+    background-color: rgb(130,180,154);
+    height: 400px;
+}
+.backgroundImgMainDiv1 img{
+    width: 100%;
+    height: 400px;
+    opacity: 0.2;
+    transition: opacity 0.5s;
+}
+.backgroundImgMainDiv2 img {
+    transition: opacity 0.5s;
+    height: 400px;
+    opacity: 0.2;
+    width: 100% ;
+}
+.backgroundImgMainDiv3 img{
+    
+    transition: opacity 0.5s;
+    height: 400px;
+    opacity: 0.2;
+    width: 100% ;
+}
+
+.backgroundImgMainDiv4 img{
+    transition: opacity 0.5s;
+    height: 400px;
+    opacity: 0.2;
+    width: 100% ;
+}
+.backgroundImgMainDiv5 img{
+    transition: opacity 0.5s;
+    height: 400px;
+    opacity: 0.2;
+    width: 100% ;
+}
+
+.backgroundImgMainDiv6 img{
+    width: 100%;
+    height: 400px;
+    opacity: 0.2;
+    transition: opacity 0.5s;
+}
+.backgroundImgMainDiv1:hover img, .backgroundImgMainDiv2:hover img  , .backgroundImgMainDiv3:hover img , .backgroundImgMainDiv4:hover img , .backgroundImgMainDiv5:hover img , .backgroundImgMainDiv6:hover img {
+    opacity: 1;
+    
+}
+
+.content2 {
+    position: absolute;
+    top: 50%;
+    left: 170px;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* background-color: red; */
+    text-align: center;
+}
+.hr{
+    color:red;
+    border: 1px solid white;;   
+}
+.footerUpperSection{
+    height:300px;
+    display: flex;
+    justify-content: start;
+}
+.innerDiv{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    /* background-color: aqua; */
+}
+.h2{
+    /* margin: 0%; */
+    color: white;
+}
+.hr2{
+    width: 170px;
+    /* align-items: start; */
+    margin:  0;
+    border: 1px solid white;
+}
+.button2 {
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    width: 195px;
+    height: 44.9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3px;
+    border: 2px solid white;
+    color: white;
+    margin-left: 30px;
+    transition: .3s ;
+    vertical-align: center;
+    text-align: center;
+    margin: 0%;
+    /* margin-left: 20px; */
+}
+
+.button2:hover {
+    cursor: pointer;
+    border: 2px solid aquamarine;
+    color: aquamarine;
+    transition: .3s;
 }
