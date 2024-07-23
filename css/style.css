@@ -238,7 +238,9 @@ body {
     color: aquamarine;
     transition: .3s;
 }
-@media screen  (max-width:780px){
-    
-    
+@media screen and (min-width:480px) and (max-width:980px){
+    .heading {
+        font-size: 32px;
+        /* color: aqua; */
+    }
 }
