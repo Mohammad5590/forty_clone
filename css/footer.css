@@ -1,97 +1,194 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #ffffff;
+.footer{
+    background-color: rgb(36,41,67);
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    /* background-color: red; */
+    border-bottom: 2px solid rgba(212, 212, 255, 0.1);
 }
-
-.footer {
+.mainDivOfInputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    /* background-color: aquamarine; */
+    width: 50%;
+    border-right: solid 1px rgba(212, 212, 255, 0.1);
+    /* height: auto; */
+    /* flex-direction:column-reverse; */
+}
+.nameAndEmailDivs{
+    width: 100%;
+    /* height: 40px; */
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #202020;
-}
 
-.mainDivOfInputs {
+}
+.inputDiv{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: start;
+    /* gap: 40px; */
+    width: 45%;
+    /* height: 30px; */
+    /* padding: 0px 13.5px; */
+    /* background-color: red; */
 }
-
-.inputDiv, .inputDiv2 {
+.inputDiv>input{
+    background-color: rgb(42,47,74);
+    width: 87%;
+    padding: 0px 16px;
+    height: 2.75rem;
+    border: none;
+    outline:none;
+}
+.inputDiv>input:focus{
+    /* outline: aqua; */
+    border: none;
+    outline: 2px solid #9bf1ff;
+    
+}
+.inputDiv2{
+    /* background-color: green; */
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
-
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
+.inputDiv2>label,.inputDiv>label{
+    margin-bottom: 12px;
+    color: white;
+}
+.inputDiv2>textarea{
+    /* border: none; */
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 1.65;
+    color: white;
+    height: 200px;
+    background-color: rgb(42,47,74);
+}
+.button1{
+    width: 168.px;
+    height: 44.8px;
+    padding: 0 22.9px;
+    color: #242943;
+    transition: .3s;
+    margin-right: 20px;
+}
+.button1:hover{
+    background-color:rgb(83,227,251) ;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+.button3{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 96.19px;
+    height: 44.8px;
+    padding: 0%;
+    margin: 0%;
+    transition: .3s;
+    font-size: 17px;
 }
 
-input, textarea {
-    padding: 10px;
-    border: 1px solid #333333;
-    border-radius: 5px;
-    background-color: #2a2a2a;
+.button3:hover {
+    cursor: pointer;
+    border: 2px solid aquamarine;
+    color: aquamarine;
+    transition: .3s;
+}
+.buttonDiv{
+    display: flex;
+}
+body {    
+    background-color:  rgb(42,47,74);
     color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-textarea {
-    height: 100px;
-    resize: none;
-}
-
-.contactMainDiv {
+.contact-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
+    /* padding: 20px; */
+    width: 30%;
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 }
-
-.contactInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contactItem {
+.contact-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    height: 168.7px;
+    margin-bottom: 20px;
+    /* border-width: 53px; */
+    /* padding: 30px 0; */
+    padding-left: 30px;
+    width: 100%;
 }
-
 .icon {
-    font-size: 24px;
+    margin-right: 25px;
+    margin-bottom: 40px;
+}
+.icon img {
+    width: 24px;
+    height: 24px;
+}
+.icon1 {
+    margin-right: 25px;
+    margin-bottom: 60px;
+}
+.icon1 img {
+    width: 24px;
+    height: 24px;
+}
+.details h2 {
+    margin-bottom: 30px;
+    font-size: 1.3em;
+}
+.details a, .details p {
+    margin: 5px 0 0 0;
+    color: #ffff;
+    text-decoration:dashed;
+    transition: .3s ;
+}
+.details a:hover {
+    color: rgb(56,209,221);
+    transition: .3s;
+    text-decoration: underline;
+}
+.iconsMainDiv{
+    height: 206x;
+    padding: 100px 0 40px 50px;
+    background-color: #242943;
+}
+.social-icons {
+    display: flex;
+    /* justify-content: center; */
+    gap: 15px;
+    background-color: #242943;
+    padding: 10px;
 }
 
-.text {
-    font-size: 16px;
+.social-icon {
+    color: white;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    transition: transform 0.2s;
 }
 
+.social-icon:hover {
+    transform: scale(1.1);
+    background-color: rgb(55,166,203);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.social-icon i {
+    color: #242943;
+}

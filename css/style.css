@@ -238,3 +238,7 @@ body {
     color: aquamarine;
     transition: .3s;
 }
+@media screen  (max-width:780px){
+    
+    
+}
