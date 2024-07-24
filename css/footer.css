@@ -153,6 +153,7 @@ body {
 .details a, .details p {
     margin: 5px 0 0 0;
     color: #ffff;
+    text-underline-offset: 3px;
     text-decoration:dashed;
     transition: .3s ;
 }
@@ -178,8 +179,12 @@ body {
     color: white;
     font-size: 1em;
     background-color: white;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
     border-radius: 50%;
-    padding: 10px;
+    /* padding: 10px; */
     text-decoration: none;
     transition: transform 0.2s;
 }
@@ -190,5 +195,5 @@ body {
 }
 
 .social-icon i {
-    color: #242943;
+    color:#242943;
 }
