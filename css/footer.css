@@ -203,6 +203,9 @@ body {
 .social-icon i {
     color:#242943;
 }
+.copyRhightP{
+    color:  rgba(244, 244, 255, 0.2);
+}
 @media screen and (min-width:480px) and (max-width:980px) {
     .footer{
         display: flex;
@@ -226,4 +229,61 @@ body {
     .contact-info{
         width: 100% ;
     }
+}
+@media all  and (max-width:480px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: none;
+    }
+    .contact-item{
+        margin: auto;
+        width:100%;
+        /* background-color: aqua; */
+        padding: 0%;
+        /* border-width: 3000px; */
+        border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+    }
+    .icon{
+        margin-left: 30px;
+    }
+    .mainDivOfInputs{
+        width: 100%;
+    }
+    .contact-info{
+        width: 100% ;
+    }
+    .nameAndEmailDivs{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inputDiv{
+        width: 100%;
+    }
+    
+.iconsMainDiv{
+    height: 206x;
+    padding: 70px 0 0px 0px;
+    background-color: #242943;
+}
+    
+.copyRhightP{
+    color:  rgba(244, 244, 255, 0.2);
+    font-size: 13px;
+    margin-left: 10px;
+}
+.social-icon {
+    color: white;
+    font-size: .9em;
+    background-color: white;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    /* padding: 10px; */
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
 }
