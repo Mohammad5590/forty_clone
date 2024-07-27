@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
 <body>
@@ -24,16 +24,17 @@
         <div id="navBar">
         </div>
         <div class="inner">
-               <h1 class="heading">Hi, my name is Forty</h1>
+            <h1 class="heading">Hi, my name is Forty</h1>
             <hr>
             <div class="content">
                 <p>A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
                     AND RELEASED UNDER THE CREATIVE COMMONS.</p>
-                <button class="button"><span>Get Sttarted</span> <span style="font-size: 30px;">&#x27F6</span></button>
+                <button class="button"><span>Get Sttarted</span> <span
+                        style="font-size: 30px;">&#x27F6</span></button>
             </div>
         </div>
     </section>
-    <section class="titles">
+    <section id="#tiles" class="titles">
         <div class="backgroundImgMainDiv1">
             <img src="https://html5up.net/uploads/demos/forty/images/pic01.jpg" alt="">
             <div></div>
@@ -67,7 +68,7 @@
                 <p>NISL SED AlIQUAM</p>
             </div>
         </div>
-        
+
         <div class="backgroundImgMainDiv5">
             <img src="https://html5up.net/uploads/demos/forty/images/pic05.jpg" alt="">
             <div class="content2">
@@ -76,7 +77,7 @@
                 <p>NISL SED AlIQUAM</p>
             </div>
         </div>
-        
+
         <div class="backgroundImgMainDiv6">
             <img src="https://html5up.net/uploads/demos/forty/images/pic06.jpg" alt="">
             <div class="content2">
@@ -87,22 +88,38 @@
         </div>
     </section>
     <section class="footerUpperSection">
-        <div  class="innerDiv">
+        <div class="innerDiv">
             <h2 class="h2">Massa libero</h2>
             <hr class="hr2">
-            <p style="color: rgb(221,216,226);">Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+            <p style="color: rgb(221,216,226);">Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.
+                Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula
+                tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
+                consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet
+                pharetra et feugiat tempus.</p>
             <button class="button2"><span>Get Sttarted</span> <span style="font-size: 30px;">&#x27F6</span></button>
         </div>
     </section>
     <div id="footer"></div>
 </body>
-
+<script src></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         fetch("navBar.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("navBar").innerHTML = data
+                // Add scroll event listener
+                window.addEventListener('scroll', function () {
+                    const navbar = document.querySelector('.nav');
+                    const scrollHeight = 500; // Change this to your desired scroll height
+                    console.log(window.scrollY, "scrollY");
+
+                    if (window.scrollY > scrollHeight) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                })
             })
             .catch(error => console.error('Error loading navbar', error))
     })
@@ -113,6 +130,14 @@
                 document.getElementById("footer").innerHTML = data
             })
             .catch(error => console.error('Error loading footer', error))
+    })
+    // Initialize Smooth Scroll
+
+    const button = document.getElementsByClassName("button");
+    document.addEventListener("click", function () {
+        console.log("button clicked")
+        document.getElementById('#tiles').scrollIntoView({ behavior: 'smooth' });
+
     })
 </script>
 

@@ -1,6 +1,24 @@
 .nav{
     display: flex;
     justify-content: space-between;
+    /* position: fixed; */
+    /* top:0px; */
+    /* background: red; */
+    /* margin-bottom: 50px; */
+    width: 100%;
+    /* z-index: 1; */
+}
+.scrolled{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    background: rgb(42, 47, 74);
+    /* margin-bottom: 50px; */
+    width: 100%;
+    z-index: 1;
+    transition: all .3s;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
 }
 .logo{
     display: flex;

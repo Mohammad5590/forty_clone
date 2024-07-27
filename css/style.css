@@ -3,31 +3,36 @@ body {
     margin: 0%;
     font-family: "Poppins", sans-serif;
     background-color: rgb(42, 47, 74);
+    scroll-behavior: smooth;
 }
 
 #major {
     position: relative;
-    background-color: red;
-    height: 80vh;
-    background-color: #242943ad;
+    display: grid;
+    place-items: baseline;
+    /* background-color: red; */
+    height: 90vh;
+    /* background-color: #242943ad; */
 }
 
 #navBar {
     /* position: relative; */
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
+    /* margin-bottom: 50px; */
     /* background-color: aqua; */
 }
 
 .inner {
     color: white;
     width: 80%;
-    margin: 140px auto 20px;
+    margin: 0 auto 20px;
 }
 
 .heading {
     font-size: 42px;
     font-weight: 500;
+    margin-top: 0%;
 }
 
 .content {
@@ -78,13 +83,14 @@ body {
 .imgDiv {
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
 }
 
 .imgDiv>img {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     margin: auto;
+    filter: opacity(0.2);
 }
 
 .titles {
