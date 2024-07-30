@@ -69,6 +69,12 @@ transition: .3s;
     transition: .3s;
     cursor: pointer;
 }
+.overLayDiv{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    
+}
 /* 
 i{
     font-size: 18px;
