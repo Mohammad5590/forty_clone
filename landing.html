@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+
+<body>
+    <div class="imgDiv">
+        <img src="https://html5up.net/uploads/demos/forty/images/pic07.jpg" alt="">
+    </div>
+    <section id="major">
+        <div id="navBar">
+        </div>
+        <div class="inner">
+            <h1 class="heading">Landing</h1>
+            <hr style="border: 1.3px solid white;">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet nullam consequat
+                    <br>
+                    sed veroeros. tempus adipiscing nulla.</p>
+            </div>
+        </div>
+    </section>
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h2>Sed amet aliquam</h2>
+                <hr class="hr">
+            </header>
+            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+        </div>
+    </section>
+    <section id="two">
+        <div class="img2">
+            <img src="https://html5up.net/uploads/demos/forty/images/pic08.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="inner2">
+                <header class="major">
+                    <h3>Orci maecenas</h3>
+                </header>
+                <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("navBar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navBar").innerHTML = data;
+                const hamburger = document.querySelector(".menuDiv");
+                const overlayDiv = document.querySelector(".overlayDiv");
+                hamburger.addEventListener("click", function () {
+                    console.log("hamburger cllicked")
+                    overlayDiv.style.display = "block"
+
+                })
+                overlayDiv.addEventListener("click", function () {
+                    console.log("overlay clicked")
+                    overlayDiv.style.display = "none"
+                })
+                // Add scroll event listener
+                window.addEventListener('scroll', function () {
+                    const navbar = document.querySelector('.nav');
+                    const scrollHeight = 500; // Change this to your desired scroll height
+
+                    if (window.scrollY > scrollHeight) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                })
+            })
+            .catch(error => console.error('Error loading navbar', error))
+    })
+</script>
+
+</html>

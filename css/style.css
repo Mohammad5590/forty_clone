@@ -93,7 +93,7 @@ body {
     filter: opacity(0.2);
 }
 
-.titles {
+.titles{
     display: flex;
     justify-content: space-between;
     width: 100%;
