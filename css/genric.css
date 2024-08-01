@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(36,41,67);
+    color: white;
+}
+.genricMaindDiv{
+    width: 89%;
+    margin: auto;
+    margin-top: 80px;
+}
+#navBar{
+    background-color: rgb(42,47,74);
+    margin: 0%;
+    padding: 0%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.major{
+    font-size: 1.5em;
+    margin: 0%;
+    /* margin: auto; */
+}
+.major>img{
+    width: 100%;
+}
+.hr {
+    width: 15%;
+    margin: 0%;
+    margin-bottom: 20px;
+}
+.p{
+    margin: 0 0 2em 0;
+    font-size: 17px;
+}

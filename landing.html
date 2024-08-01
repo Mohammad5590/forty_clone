@@ -103,20 +103,20 @@
     </section>
 
     <!-- overlay navigation div -->
-    <div style="width: 100vw; height: 100vh; background-color: rgba(35, 41, 67, 0.678); top: 0; left: 0; position: fixed; z-index: 2; backdrop-filter: blur(20px);"
+    <div style="width: 100vw; height: 100vh; display: none; background-color: rgba(35, 41, 67, 0.678); top: 0; left: 0; position: fixed; z-index: 2; backdrop-filter: blur(20px);"
         class="overlayDiv">
         <i class="fa fa-close" style="position: absolute; top: 30px; right: 55px; cursor: pointer; font-size:36px;"></i>
         <div style="width: 18em; height: auto; padding: 20px; margin: 10% auto;">
             <a style="width: 100%; text-align: center; font-size: 14.8px;align-items: center; height: 50px; display: flex; justify-content: center; border-bottom:1px solid rgba(212, 212, 255, 0.1); border-width: 2px; text-decoration: none; color: white;"
-                href="#">  
+                href="#" class="home">  
                 <div style="width:100%;">HOME</div>
             </a>
             <a style="width: 100%; text-align: center; font-size: 14.8px;align-items: center; height: 50px; display: flex;justify-content: center; border-bottom:1px solid rgba(212, 212, 255, 0.1); border-width: 2px; text-decoration: none; color: white;"
-                href="#">
+                href="#" class="landing">
                 <div style="width: 100%;">LANDING</div>
             </a>
             <a style="width: 100%; text-align: center; font-size: 14.8px;align-items: center; height: 50px; display: flex;justify-content: center; border-bottom:1px solid rgba(212, 212, 255, 0.1); border-width: 2px; text-decoration: none; color: white;"
-                href="#">
+                href="#" class="genric">
                 <div style="width: 100%;">GENRIC</div>
             </a>
             <a style="width: 100%; text-align: center; font-size: 14.8px;align-items: center; height: 50px; display: flex;justify-content: center;  text-decoration: none; color: white;"
@@ -129,6 +129,7 @@
     </div>
     <div id="footer"></div>
 </body>
+<script src="./js/overlay.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         fetch("navBar.html")
@@ -137,14 +138,18 @@
                 document.getElementById("navBar").innerHTML = data;
                 const hamburger = document.querySelector(".menuDiv");
                 const overlayDiv = document.querySelector(".overlayDiv");
+                const logo=document.querySelector(".logo")
                 hamburger.addEventListener("click", function () {
                     console.log("hamburger cllicked")
                     overlayDiv.style.display = "block"
 
                 })
                 overlayDiv.addEventListener("click", function () {
-                    console.log("overlay clicked")
+                    console.log("overlay clicked")  
                     overlayDiv.style.display ="none"
+                })
+                logo.addEventListener("click", function(){
+                    window.location.href="index.html"
                 })
                 // Add scroll event listener
                 window.addEventListener('scroll', function () {
@@ -170,12 +175,12 @@
     })
     // Initialize Smooth Scroll
 
-    const button = document.querySelector(".button");
-    button.addEventListener("click", function () {
-        console.log("button clicked")
-        document.getElementById('#tiles').scrollIntoView({ behavior: 'smooth' });
+    // const button = document.querySelector(".button");
+    // button.addEventListener("click", function () {
+    //     console.log("button clicked")
+    //     document.getElementById('#tiles').scrollIntoView({ behavior: 'smooth' });
 
-    })
+    // })
 </script>
 
 </html>

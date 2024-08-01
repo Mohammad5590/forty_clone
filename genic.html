@@ -7,13 +7,102 @@
     <link rel="stylesheet" href="css/genric.css">
 </head>
 <body>
+
+    <div id="navBar">
+    </div>  
     <section class="genricMaindDiv">
-        <div class="genricIInnerDiv">
+        <div class="genricInnerDiv">
             <header class="major">
-                <h2>generic</h2>
-                <hr>
+                <h2>Generic</h2>
+                <hr class="hr">
+                <img src="https://html5up.net/uploads/demos/forty/images/pic11.jpg" alt="">
             </header>
+            <p class="p">Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+            <p class="p">Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
         </div>
     </section>
+    
+    <!-- overlay navigation div -->
+    <div style="width: 100vw; height: 100vh; display: none; background-color: rgba(35, 41, 67, 0.678); top: 0; left: 0; position: fixed; z-index: 2; backdrop-filter: blur(20px);"
+        class="overlayDiv">
+        <i class="fa fa-close" style="position: absolute; top: 30px; right: 55px; cursor: pointer; font-size:36px;"></i>
+        <div style="width: 18em; height: auto; padding: 20px; margin: 10% auto;">
+            <a style="width: 100%; text-align: center; font-size: 14.8px;align-items: center; height: 50px; display: flex; justify-content: center; border-bottom:1px solid rgba(212, 212, 255, 0.1); border-width: 2px; text-decoration: none; color: white;"
+                href="#home" class="home">  
+                <div style="width:100%;">HOME</div>
+            </a>
+            <a style="width: 100%; text-align: center; font-size: 14.8px;align-items: center; height: 50px; display: flex;justify-content: center; border-bottom:1px solid rgba(212, 212, 255, 0.1); border-width: 2px; text-decoration: none; color: white;"
+                href="#" class="landing">
+                <div style="width: 100%;">LANDING</div>
+            </a>
+            <a style="width: 100%; text-align: center; font-size: 14.8px;align-items: center; height: 50px; display: flex;justify-content: center; border-bottom:1px solid rgba(212, 212, 255, 0.1); border-width: 2px; text-decoration: none; color: white;"
+                href="#" class="genric">
+                <div style="width: 100%;">GENRIC</div>
+            </a>
+            <a style="width: 100%; text-align: center; font-size: 14.8px;align-items: center; height: 50px; display: flex;justify-content: center;  text-decoration: none; color: white;"
+                href="#">
+                <div style="width: 100%;">ELEMENT</div>
+            </a>
+            <button style="width: 100%; height: 50px; color: rgb(35, 41, 67); margin-top:20px;">GET STARTED</button>
+            <button style="width: 100%; height: 50px; color: white; background-color: transparent; border: 2px solid white; margin-top:20px;">LOG IN</button>
+        </div>
+    </div>
+    <div id="footer"></div>
 </body>
+<script src="./js/overlay.js"></script>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("navBar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navBar").innerHTML = data;
+                const hamburger = document.querySelector(".menuDiv");
+                const overlayDiv = document.querySelector(".overlayDiv");
+                const logo=document.querySelector(".logo")
+                hamburger.addEventListener("click", function () {
+                    console.log("hamburger cllicked")
+                    overlayDiv.style.display = "block"
+
+                })
+                overlayDiv.addEventListener("click", function () {
+                    console.log("overlay clicked")
+                    overlayDiv.style.display ="none"
+                })
+                logo.addEventListener("click", function(){
+                    window.location.href="index.html"
+                })
+                // // Add scroll event listener
+                // window.addEventListener('scroll', function () {
+                //     const navbar = document.querySelector('.nav');
+                //     const scrollHeight = 500; // Change this to your desired scroll height
+
+                //     if (window.scrollY > scrollHeight) {
+                //         navbar.classList.add('scrolled');
+                //     } else {
+                //         navbar.classList.remove('scrolled');
+                //     }
+                // })
+            })
+            .catch(error => console.error('Error loading navbar', error))
+    })
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data
+            })
+            .catch(error => console.error('Error loading footer', error))
+    })
+    // Initialize Smooth Scroll
+
+    // const button = document.querySelector(".button");
+    // button.addEventListener("click", function () {
+    //     console.log("button clicked")
+    //     document.getElementById('#tiles').scrollIntoView({ behavior: 'smooth' });
+
+    // })
+</script>
 </html>
