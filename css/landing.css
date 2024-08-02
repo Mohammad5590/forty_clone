@@ -91,6 +91,7 @@ body {
 
 .img2 {
     width: 40%;
+    cursor: pointer;
 }
 
 .img2>img {

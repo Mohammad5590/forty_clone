@@ -106,6 +106,7 @@ body {
     /* Adjust width as needed */
     background-color: rgb(122, 192, 216);
     height: 400px;
+    cursor: pointer;
 }
 
 .h3 {
@@ -118,6 +119,7 @@ body {
     width: 60%;
     background-color: rgb(126, 118, 180);
     height: 400px;
+    cursor: pointer;
 }
 
 .backgroundImgMainDiv3 {
@@ -125,6 +127,7 @@ body {
     width: 60%;
     background-color: rgb(229, 147, 138);
     height: 400px;
+    cursor: pointer;
 }
 
 .backgroundImgMainDiv4 {
@@ -132,6 +135,7 @@ body {
     width: 40%;
     background-color: rgb(219, 178, 139);
     height: 400px;
+    cursor: pointer;
 }
 
 .backgroundImgMainDiv5 {
@@ -139,6 +143,7 @@ body {
     width: 40%;
     background-color: rgb(141, 167, 224);
     height: 400px;
+    cursor: pointer;
 }
 
 .backgroundImgMainDiv6 {
@@ -146,6 +151,7 @@ body {
     width: 60%;
     background-color: rgb(130, 180, 154);
     height: 400px;
+    cursor: pointer;
 }
 
 .backgroundImgMainDiv1 img {
